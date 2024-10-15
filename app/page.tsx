@@ -48,8 +48,10 @@ export default function Home() {
       <div className="h-full p-4 overflow-scroll">
         <div className="flex justify-start p-4 ">
           <div>このChatBotは官公庁の「よくある質問」をもとに作成された、基本的なRAGになっています。<br/>
-            データセット：<Link className="font-semibold text-blue-700 hover:underline" href={"https://note.com/eurekachan/n/nc31c0dccb3c1"}>JaGovFaqs-22k</Link><br/>
-          モデル：<Link className="font-semibold text-blue-700 hover:underline" href={"https://huggingface.co/tokyotech-llm/Llama-3-Swallow-8B-Instruct-v0.1"}>Llama 3 Swallow 8B</Link>
+            データセット：<Link target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-700 hover:underline" href={"https://huggingface.co/datasets/matsuxr/JaGovFaqs-22k"}>JaGovFaqs-22k</Link><br/>
+            モデル：<Link target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-700 hover:underline" href={"https://huggingface.co/tokyotech-llm/Llama-3-Swallow-8B-Instruct-v0.1"}>Llama 3 Swallow 8B</Link><br />
+            Github：<Link target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-700 hover:underline" href={"https://github.com/goda6565/chatbot-front"}>chatbot-front</Link>・
+            <Link target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-700 hover:underline" href={"https://github.com/goda6565/chatbot-back"}>chatbot-back</Link>
           </div>
         </div>
         {messages.map((message, index) => (
